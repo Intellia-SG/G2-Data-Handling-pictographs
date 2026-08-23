@@ -1,0 +1,55 @@
+/* ─── CSS Design Tokens ─────────────────────────────────────────────────── */
+:root {
+  --bg-dark:        #0a0a2e;
+  --bg-card:        rgba(30, 25, 75, 0.7);
+  --bg-card-solid:  #1a1a5e;
+  --purple-deep:    #2d1b69;
+  --purple-mid:     #4a2c8a;
+  --purple-light:   #7c5cbf;
+  --blue-deep:      #1a237e;
+  --blue-mid:       #283593;
+  --blue-bright:    #3f51b5;
+  --gold:           #ffb300;
+  --gold-light:     #ffd54f;
+  --gold-dark:      #f57f17;
+  --green:          #4caf50;
+  --green-light:    #81c784;
+  --green-dark:     #388e3c;
+  --red:            #ef5350;
+  --red-light:      #ef9a9a;
+  --coral:          #ff7043;
+  --white:          #ffffff;
+  --text-primary:   #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.75);
+  --text-muted:     rgba(255, 255, 255, 0.45);
+
+  --color-bg:         var(--bg-dark);
+  --color-surface:    var(--bg-card);
+  --color-primary:    var(--gold);
+  --color-secondary:  var(--purple-light);
+  --color-accent:     var(--green);
+  --color-error:      var(--red);
+  --color-text:       var(--text-primary);
+  --color-text-muted: var(--text-muted);
+  --picto-key:        #ffd54f;
+
+  --font-display:   'Fredoka', 'Quicksand', sans-serif;
+  --font-body:      'Nunito', sans-serif;
+  --radius-sm:      8px;
+  --radius-md:      14px;
+  --radius-lg:      22px;
+  --radius-xl:      30px;
+  --radius-full:    9999px;
+  --radius-pill:    9999px;
+  --radius-btn:     16px;
+
+  --shadow-glow:    0 0 30px rgba(124, 92, 191, 0.3);
+  --shadow-card:    0 12px 40px rgba(0, 0, 0, 0.4);
+  --shadow-button:  0 4px 15px rgba(255, 179, 0, 0.35);
+  --shadow-glow-gold: 0 0 24px rgba(255, 193, 7, 0.35);
+
+  --transition:       0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast:  0.18s ease;
+  --transition-base:  0.3s ease;
+  --transition-spring: 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}

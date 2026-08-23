@@ -1,0 +1,57 @@
+/* src/components/shared/FeedbackOverlay.css */
+.feedback-overlay-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 30, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 400;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.feedback-overlay-card {
+  max-width: 480px;
+  width: 100%;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  background: rgba(26, 18, 55, 0.94);
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.55);
+  cursor: default;
+}
+
+.feedback-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.feedback-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 900;
+}
+
+.feedback-overlay-backdrop.correct .feedback-title {
+  color: #4ade80;
+}
+
+.feedback-overlay-backdrop.incorrect .feedback-title {
+  color: #fbbf24;
+}
+
+.feedback-explanation {
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 1.1vw, 1.08rem);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+  margin: 0;
+}
